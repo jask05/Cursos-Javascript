@@ -1,0 +1,88 @@
+body {
+    background-color: #eee;
+}
+
+h1 {
+    color: blue;
+}
+
+#parrafo {
+    color: #ff0000;
+}
+
+.etiqueta {
+    font-weight: bold;
+    width: 450px;
+    background-color: aquamarine;
+    padding: 20px;
+    margin: 10px;
+}
+
+hr {
+    margin: 40px 0;
+}
+
+table {
+    width: 100%;
+    background-color: white;
+    border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+    background-color: #d6d6d6;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+table th {
+    background-color: #4caf50;
+    color: white;
+    text-align: left;
+    padding: 12px 8px;
+}
+
+#over {
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+    overflow: scroll;
+}
+
+ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+}
+
+ul.nav>li {
+    float: left;
+}
+
+ul.nav>li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+ul.nav>li:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.active {
+    background-color: #4caf50;
+}
+
+.content {
+    margin-top: 70px;
+}
