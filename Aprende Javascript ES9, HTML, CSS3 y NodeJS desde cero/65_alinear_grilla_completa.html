@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            height: 100%;
+        }
+
+        body {
+            background-color: #eee;
+            margin: 0;
+            height: 100%
+        }
+
+        .grid {
+            background-color: beige;
+            display: grid;
+            width: 100%;
+            height: 100%;
+            grid-template-columns: repeat(4, 80px);
+            grid-template-rows: repeat(3, 80px);
+            grid-gap: 5px;
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+            justify-content: center;
+            align-content: center;
+        }
+
+        .red {
+            background-color: tomato;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="red">Header</div>
+        <div class="red">Header</div>
+        <div class="red">Sidebar</div>
+        <div class="red">Footer</div>
+        <div class="red">Footer</div>
+        <div class="red">Content</div>
+        <div class="red">Content</div>
+        <div class="red">Content</div>
+        <div class="red">Content</div>
+        <div class="red">Content</div>
+    </div>
+
+</body>
+
+</html>

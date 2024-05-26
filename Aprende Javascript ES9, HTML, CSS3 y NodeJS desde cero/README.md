@@ -15,6 +15,7 @@
 11. **CSS: Elementos útiles**
 12. **CSS: Avanzado**
 13. **CSS: Grid**
+14. **Bibliografía**
 
 # Contenido
 ## 1. **Introducción.**
@@ -93,7 +94,8 @@ Si se utiliza **grid-template-columns** y se tienen 6 elementos, pero se añaden
 ```
 ![grid-template-columns](images/grid_01.png)
 
-A **grid-template-rows** se le puede asignar un tamaño **mínimo** y **máximo** utilizando **minmax(<ancho>, auto)**
+**grid-template-rows** y **grid-template-columns**
+- Se le puede asignar un tamaño **mínimo** y **máximo** utilizando **minmax(<ancho>, auto)**
 
 ```css
 .grid {
@@ -102,3 +104,42 @@ A **grid-template-rows** se le puede asignar un tamaño **mínimo** y **máximo*
     grid-template-columns: minmax(auto, 50%) 1fr 3em;
 }
 ```
+- Puede utilizar un alto y ancho indefinido para filas y columnas con **repeteat(nº veces repetir, valor como 2do argumento)**
+```css
+.grid {
+    display: grid;
+    grid-template-rows: repeat(2, 50px);
+    grid-template-columns: repeat(3, 1fr);
+}
+```
+- Brecha entre elementos (espacio en blanco): **grid-row-gap** y **grid-column-grap** o **grip-gap** (primer valor para filas, segundo valor para columnas).
+```css
+.grid {
+    display: grid;
+    grid-row-gap: 20px;
+    grid-column-gap: 10px;
+    grid-gap: 20px 10px;
+}
+```
+- Se puede hacer que el primer elemento, utilice todas las celdas a modo "header", o menú lateral que ocupe toda la columna. Se utiliza **grid-column-start**, **grid-column-end**, **grid-row-start**, **grid-row-end**. No se puede aplicar a la grilla, si no, a **un elemento en particular**.
+    - Recibe el **nº de la línea donde queramos que comience**.
+![grid-xxx-start-end](images/58_grid_xxx_start_end.png)
+```css
+.header {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-colum-start: 1;
+    grid-column-end: 3;
+    /* Forma resumida */
+    grid-column: 1 / 6;
+    grid-row: 1 / 3;
+}
+```
+![grid-xxx-start-end-resultado](images/58_grid_xxx_start_end_resultado.png)
+- Se pueden asignar nombres a las líneas de las grillas.
+```css
+grid-template-rows: [row-1-inicio] 50px [row-2-inicio] 20px;
+```
+
+# Bibliografía
+- [CSS Grid Garden](https://cssgridgarden.com/#es)
