@@ -141,5 +141,9 @@ Si se utiliza **grid-template-columns** y se tienen 6 elementos, pero se añaden
 grid-template-rows: [row-1-inicio] 50px [row-2-inicio] 20px;
 ```
 
+## 14. **CSS: Flexbox**
+![explicación flexbox](images/flexbox_01.png)
+- **CSS Grid** está pensando para trabajar en dos dimensiones (filas y columnas) en cambio, **Flexbox** se pensó para trabajar en una dimensión (una fila y una columna).
+
 # Bibliografía
 - [CSS Grid Garden](https://cssgridgarden.com/#es)
